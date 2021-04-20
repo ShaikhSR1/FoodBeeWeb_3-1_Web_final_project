@@ -2,7 +2,7 @@
 
 ### This a PHP based web project using HTML, CSS, JAVASCRIPT, JQUERY
 
-#### Requirements for pc - 
+### Requirements for pc - 
 
 - XAMPP / WAMP server
 - PHP installed in your pc
@@ -10,7 +10,7 @@
 ********************************
 
 
-#### Procedure
+### Procedure
 
 - Simply download this project
 - Create e database name `foodbee`
