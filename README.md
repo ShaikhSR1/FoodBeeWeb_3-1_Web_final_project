@@ -21,7 +21,7 @@ That is if you are using **XAMPP**
 - Store in `htdocs` folder inside `XAMPP` folder
 
 If you are using `WAMPP` 
--Store in `www` folder
+- Store in `www` folder
 
 ### Accessing the website
 
