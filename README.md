@@ -7,7 +7,7 @@
 - XAMPP / WAMP server
 - PHP installed in your pc
 
-********************************
+***
 
 
 ### Procedure
@@ -22,6 +22,8 @@ That is if you are using **XAMPP**
 
 If you are using `WAMPP` 
 - Store in `www` folder
+
+***
 
 ### Accessing the website
 
