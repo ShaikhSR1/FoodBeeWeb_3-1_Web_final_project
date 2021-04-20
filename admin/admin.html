@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+    <link rel="icon" href="photos\icon1.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\admin.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <section class="container1">
+        <div class="navbar">
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="photos/Food Bee1.png" width="125px" alt="FOODBEE">
+                </a>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="restaurant.html">Restaurants</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!---------------End of Navbar------------------->
+
+    <!--------------- Start of Admin ------------------->
+
+    <section class="account">
+        <div class="account-container">
+            <div class="form-container">
+                <div class="form-btn">
+                    <span onclick="updateRestaurent()">Update</span>
+                    <span onclick="addRestaurent()">Add</span>
+                    <span onclick="removeRestaurent()">Remove</span>
+                    <hr id="Indicator">
+                </div>
+
+
+                <!---------------- Remove restaurent ----------->
+
+                <form id="RegForm">
+                    <input type="text" placeholder="Restaurent Name">
+                    <input type="text" placeholder="Restaurent Location">
+                    <input type="text" placeholder="Phone Number">
+                    <button type="submit" class="acc-btn">Remove</button>
+                </form>
+
+                <!---------------- Add restaurent ----------->
+                <form id="UpdateForm">
+                    <input type="text" placeholder="Restaurent Name">
+                    <input type="text" placeholder="Restaurent Location">
+                    <input type="text" placeholder="Phone Number">
+                    <input type="file" class="myFile" name="filename">
+                    <label for="file-upload" class="custom-file-upload">
+                        <i class="fa fa-cloud-upload">Upload Restarant Photo</i>
+                        <input type="file" class="myFile" name="filename">
+                    </label>
+                    <input class="file-upload" type="file" />
+                    <button type="submit" class="acc-btn">Add</button>
+                </form>
+
+                <!---------------- Update restaurent ----------->
+
+                <form id="LoginForm">
+                    <input type="text" placeholder="Restaurent Name">
+                    <input type="text" placeholder="Restaurent Location">
+                    <input type="text" placeholder="Phone Number">
+                    <input type="file" class="myFile" name="filename">
+                    <label for="file-upload" class="custom-file-upload">
+                        <i class="fa fa-cloud-upload">Upload Restarant Photo</i>
+                        <input type="file" class="myFile" name="filename">
+                    </label>
+                    <input class="file-upload" type="file" />
+                    <button type="submit" class="acc-btn">Update</button>
+                </form>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!---------------End of Navbar------------------->
+
+
+    <!-----------JS for toggle form---------------->
+
+    <script>
+        let LoginForm = document.getElementById("LoginForm");
+        let RegForm = document.getElementById("RegForm");
+        let UpdateForm = document.getElementById("UpdateForm")
+        let Indicator = document.getElementById("Indicator");
+
+        function updateRestaurent() {
+            RegForm.style.transform = "translateX(400px)";
+            LoginForm.style.transform = "translateX(400px)";
+            UpdateForm.style.transform = "translateX(400px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+
+        function addRestaurent() {
+            RegForm.style.transform = "translateX(00px)";
+            LoginForm.style.transform = "translateX(00px)";
+            UpdateForm.style.transform = "translateX(00px)";
+            Indicator.style.transform = "translateX(105px)";
+        }
+
+        function removeRestaurent() {
+            RegForm.style.transform = "translateX(-400px)";
+            LoginForm.style.transform = "translateX(-400px)";
+            UpdateForm.style.transform = "translateX(-400px)";
+            Indicator.style.transform = "translateX(210px)";
+        }
+
+    </script>
+
+</body>
+
+</html>
