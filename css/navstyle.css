@@ -1,0 +1,51 @@
+body {
+    scroll-behavior: smooth;
+}
+ul li {
+    list-style-type: none;
+}
+
+
+.container1 {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #27190e;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-logo a img{
+    width: 125px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;    
+}
+
+.main-nav {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.main-nav li {
+    font-size: 1.8rem;
+    display: inline-block;
+    padding-left: 2rem;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+
+.fas {
+    color: #e9f4fb;
+}
+
