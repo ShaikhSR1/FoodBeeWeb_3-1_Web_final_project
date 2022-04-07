@@ -46,4 +46,5 @@ If you are using `WAMPP`
 
 - To access any `restaurant admin` e.i. `resManage` panel goto database and check `restaurant` table and columns `restaurant_id` and `pass` . Use these as UserID and Password. 
 
+
 ***
