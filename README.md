@@ -2,7 +2,7 @@
 
 ### This website is also published in 
 
-http://foodbee.shaikhsr.xyz/
+https://foodbee.shaikhsr.xyz/
 
 ### This a PHP based web project using HTML, CSS, JAVASCRIPT, JQUERY
 
